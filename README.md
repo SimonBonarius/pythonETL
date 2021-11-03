@@ -1,10 +1,6 @@
 # pythonETL
 Simple but robust python ETL script to load files into a sql database. Perfect for when you receive your data as files (such as .csv) via some process and need to stage it to use it for warehousing or reporting.
 
-logging.root.handlers = []
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO , filename='C:\\Simon\\DailySales\\Logs\\Sales_{}.log'.format(datetime.datetime.now().strftime('%Y%m%d_%H%M%S')))
-pd.set_option('display.float_format', lambda x: '%.5f' % x)
-
 ## Set up logging to console
 `console = logging.StreamHandler()
 console.setLevel(logging.ERROR)`
