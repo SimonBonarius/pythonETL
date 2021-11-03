@@ -23,7 +23,7 @@ logging.getLogger("").addHandler(console)
 logging.info('Process has started')
 
 ##Load/write
-ldap_detl = {"User": "SVC_SSIS_Prod", "Password": "1%lyljW%,uBafqz"}
+ldap_detl = {"User": "Simon", "Password": "12345"}
 pickle.dump( ldap_detl, open( "save.p", "wb" ))
 
 ##Load user details that will be executing the process.
